@@ -1,14 +1,11 @@
 package org.example;
 
-import org.example.logica.Alumno;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.example.logica.Empleado;
+import org.example.logica.Persona;
 
 public class App {
     public static void main(String[] args) {
-        Alumno alumno1 = new Alumno(1, "Arriaga");
-        alumno1.saberAprobado(5);
-        alumno1.mostrarNombre();
+        Empleado empleado = new Empleado();
+        System.out.println(empleado.bailar());
     }
 }
