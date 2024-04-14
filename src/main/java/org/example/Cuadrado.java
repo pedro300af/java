@@ -1,18 +1,22 @@
 package org.example;
 
-public class Cuadrado extends Figura{
+public class Cuadrado implements Figura, IDibujable{
     private double lado;
 
     public Cuadrado() {
     }
 
-    public Cuadrado(double x, double y, double lado) {
-        super(x, y);
+    public Cuadrado(double lado) {
         this.lado = lado;
     }
 
     @Override
     public double calcularArea() {
         return lado * lado;
+    }
+
+    @Override
+    public void dibujable() {
+        System.out.println("es dibujable");
     }
 }
